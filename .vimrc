@@ -12,6 +12,9 @@ let mapleader=" "
 
 inoremap <leader>w <Esc>:w<cr>
 
+nnoremap [b :bprevious<CR>
+nnoremap ]b :bnext<CR>
+
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
@@ -46,6 +49,9 @@ Plug 'preservim/tagbar'
 Plug 'kien/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'connorholyday/vim-snazzy'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " ==========
@@ -96,3 +102,8 @@ function! ShowDocumentation()
   endif
 endfunction
 
+" ==========
+" ==========      connorholyday/vim-snazzy
+" ==========
+
+colorscheme snazzy
