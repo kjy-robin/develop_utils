@@ -1,3 +1,8 @@
+"  ##############  Run below cmd before using  ###########
+"  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"  ####################################################### 
+
 set nu
 set relativenumber
 
@@ -21,11 +26,6 @@ map sl :set splitright<CR>:vsplit<CR>
 map sh :set nosplitright<CR>:vsplit<CR>
 map sk :set nosplitbelow<CR>:split<CR>
 map sj :set splitbelow<CR>:split<CR>
-
-map <LEADER>h <C-w>h
-map <LEADER>j <C-w>j
-map <LEADER>k <C-w>k
-map <LEADER>l <C-w>l
 
 map <up> :res +5<CR>
 map <down> :res -5<CR>
